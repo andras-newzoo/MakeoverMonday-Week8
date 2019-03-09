@@ -53,19 +53,28 @@ class App extends Component {
   render() {
 
     const { dimensions } = this.state,
-          { height, width } = dimensions
+          { height, width } = dimensions,
+          statesArray = [...new Set(data.map(d => d.State))],
+          stateOptions = []
+
+    for( let i = 0; i < statesArray.length; i++){
+
+    stateOptions.push({
+                      key: statesArray[i].substring(0,2),
+                      value: statesArray[i].substring(0,2),
+                      state: statesArray[i]
+                      })
+    }
 
     this.formatData(data)
 
     data.sort((a,b) => a.homesPowered - b.homesPowered)
 
-    //console.log(width, height)
-
     return (
       <div className="visualization" ref={parent => (this.container = parent)}>
         <div className="text-controls">
             <Controls
-
+              stateOptions = {stateOptions}
             />
         </div>
         <div className="chart-one">
