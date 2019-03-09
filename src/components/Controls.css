@@ -1,1 +1,10 @@
 
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 50px;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  margin-top: 5px !important;
+}

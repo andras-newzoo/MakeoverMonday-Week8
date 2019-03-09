@@ -18,10 +18,11 @@ class Controls extends Component{
       return(
         <div>
           <Dropdown
-              placeholder='Select a state:'
+              placeholder='Highlight a state:'
               fluid multiple search selection
               onChange = {this.handleDropdownChange}
               options={this.props.stateOptions} />
+            <h1>How Many Homes Can Be Powered From Wind Energy and How Much Does it Cost?</h1>
         </div>
       )
   }

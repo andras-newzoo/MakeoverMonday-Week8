@@ -24,7 +24,8 @@ class App extends Component {
     setTimeout(() => this.handleResize(), 200);
   }
 
-  populateStateList = () => [...new Set(data.map(d => d.State))]
+  populateStateList = () => [...new Set(data.sort((a,b) =>
+    a.State.localeCompare(b.State) ).map(d => d.State))]
 
   handleResize = () => {
     this.setState({
@@ -61,8 +62,10 @@ class App extends Component {
     const { dimensions, states } = this.state,
           { height, width } = dimensions,
           statesArray = this.populateStateList(),
-          stateOptions = []
-
+          stateOptions = [],
+          margin = 100,
+          textPropsOne = {x: 0, y: 0, text: 'Power capacity as equivalent of homes powered', anchor: 'start'},
+          textPropsTwo = {x: width * .5 - margin, y: 0, text: 'Investment ($) per homes powered', anchor: 'end'}
 
     for( let i = 0; i < statesArray.length; i++){
 
@@ -90,15 +93,17 @@ class App extends Component {
               data = {data}
               xKey = {'homesPowered'}
               chartClass = {'-one'}
-              width= {width * .7}
+              width= {width/2}
               height= {height}
-              marginLeft = {20}
+              marginLeft = {margin}
               marginRight = {0}
               yAxisText = {'text'}
               yAxisDomain = {'.domain'}
               rangeToggle = {'right'}
               highlight = {states}
               numberFormat = {"$,.0d"}
+              text = {textPropsOne}
+
             />
         </div>
         <div className="chart-two">
@@ -106,13 +111,14 @@ class App extends Component {
               data = {data}
               xKey = {'invPerHome'}
               chartClass = {'-two'}
-              width= {width * .3}
+              width= {width/2}
               height= {height}
               marginLeft = {0}
-              marginRight = {20}
+              marginRight = {margin}
               rangeToggle = {'left'}
               highlight = {states}
               numberFormat = {"$,.0d"}
+              text = {textPropsTwo}
             />
         </div>
       </div>
