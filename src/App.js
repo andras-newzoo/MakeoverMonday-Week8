@@ -13,22 +13,20 @@ class App extends Component {
       dimensions: {
           height: 20000,
           width: undefined
-      }
+      },
+      states: this.populateStateList()
     }
 
-    this.handleResize = this.handleResize.bind(this);
   }
 
-  componentDidMount(){
+  componentDidMount = () => {
     window.addEventListener("resize", this.handleResize);
     setTimeout(() => this.handleResize(), 200);
   }
 
-  componentDidUpdate(){
+  populateStateList = () => [...new Set(data.map(d => d.State))]
 
-  }
-
-  handleResize() {
+  handleResize = () => {
     this.setState({
       dimensions: {
         height: this.container && this.container.clientHeight,
@@ -37,6 +35,13 @@ class App extends Component {
     });
   }
 
+  handleDropdownChange = (value) => {
+    let highlight = {...this.state}
+    if(value.length === 0){
+      highlight.states = this.populateStateList()
+    } else { highlight.states = value}
+    this.setState( highlight )
+  }
 
   formatData(raw){
 
@@ -46,26 +51,28 @@ class App extends Component {
       d.homesPowered = d['Homes Powered']
       d.invPerHome = d['Investment Per Home']
       d.totalInv = d['Total Investment']
+
     })
 
   }
 
   render() {
 
-    const { dimensions } = this.state,
+    const { dimensions, states } = this.state,
           { height, width } = dimensions,
-          statesArray = [...new Set(data.map(d => d.State))],
+          statesArray = this.populateStateList(),
           stateOptions = []
+
 
     for( let i = 0; i < statesArray.length; i++){
 
     stateOptions.push({
-                      key: statesArray[i].substring(0,2),
-                      value: statesArray[i].substring(0,2),
-                      state: statesArray[i]
+                      key: statesArray[i],
+                      value: statesArray[i],
+                      text: statesArray[i]
                       })
     }
-
+    // console.log(states)
     this.formatData(data)
 
     data.sort((a,b) => a.homesPowered - b.homesPowered)
@@ -75,6 +82,7 @@ class App extends Component {
         <div className="text-controls">
             <Controls
               stateOptions = {stateOptions}
+              handleDropdownChange = {this.handleDropdownChange}
             />
         </div>
         <div className="chart-one">
@@ -87,6 +95,9 @@ class App extends Component {
               marginLeft = {20}
               marginRight = {0}
               yAxisText = {'text'}
+              yAxisDomain = {'.domain'}
+              rangeToggle = {'right'}
+              highlight = {states}
               numberFormat = {"$,.0d"}
             />
         </div>
@@ -99,7 +110,8 @@ class App extends Component {
               height= {height}
               marginLeft = {0}
               marginRight = {20}
-              yAxisText = {'none'}
+              rangeToggle = {'left'}
+              highlight = {states}
               numberFormat = {"$,.0d"}
             />
         </div>
