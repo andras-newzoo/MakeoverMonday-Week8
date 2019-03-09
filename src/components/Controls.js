@@ -22,7 +22,7 @@ class Controls extends Component{
               fluid multiple search selection
               onChange = {this.handleDropdownChange}
               options={this.props.stateOptions} />
-            <h1>How Many Homes Can Be Powered From Wind Energy and How Much Does it Cost?</h1>
+            <h1>How Many Homes Can Be Powered from Wind Energy and How Much Does It Cost?</h1>
         </div>
       )
   }

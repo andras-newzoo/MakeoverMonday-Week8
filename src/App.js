@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import BarChart from './chart/BarChart'
 import Controls from './components/Controls'
 import data from './data/data.json'
-import {stateOptions} from './data/dropdownData.js'
 import './App.css'
+import { List } from 'semantic-ui-react'
 
 class App extends Component {
 
@@ -48,6 +48,7 @@ class App extends Component {
 
     return raw.forEach( d => {
       d.state = d.State
+      d.stateID = d.State.replace(' ','')
       d.region = d.Region.toUpperCase()
       d.homesPowered = d['Homes Powered']
       d.invPerHome = d['Investment Per Home']
@@ -120,6 +121,14 @@ class App extends Component {
               numberFormat = {"$,.0d"}
               text = {textPropsTwo}
             />
+        </div>
+        <div>
+          <List bulleted horizontal link className="credit">
+              <List.Item as='a' href="https://twitter.com/AndSzesztai"  target="_blank">Designed by: Andras Szesztai</List.Item>
+              <List.Item as='a' href="https://public.tableau.com/profile/hanna.nykowska#!/vizhome/mm2019w8/Howmanyhomescanbepoweredfromwindenergyandhowmuchisit"  target="_blank">Inspired by the work of: Hanna Nykowska</List.Item>
+              <List.Item as='a'href="https://www.makeovermonday.co.uk/"  target="_blank">#MakeoverMonday 2019 W8</List.Item>
+              <List.Item as='a' href="https://data.world/makeovermonday/2019w8"  target="_blank">Data: American Wind Energy Association via Choose Energy</List.Item>
+            </List>
         </div>
       </div>
     );

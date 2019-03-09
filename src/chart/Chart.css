@@ -7,13 +7,8 @@ text {
 
 rect {
   cursor: pointer;
-  opacity: .9;
-  transition: .5s opacity;
 }
 
-rect:hover{
-  opacity: 1;
-}
 
 
 .y-axis text {
@@ -31,7 +26,7 @@ rect:hover{
   position: absolute;
   text-align: left;
   width: auto;
-  height: auto;
+  height: 0;
   color: #333;
   padding: 6px 12px;
   background: #fff;
