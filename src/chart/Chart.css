@@ -1,0 +1,50 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+text {
+  pointer-events: none;
+}
+
+rect {
+  cursor: pointer;
+}
+
+
+.visualization {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.chart-one {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  width: 70%;
+  height: 100%;
+}
+
+.chart-two {
+  position: absolute;
+  display: inline-block;
+  left: 70%;
+  top: 0;
+  width: 30%;
+  height: 100%;
+}
+
+.text-controls {
+  position: absolute;
+  display: inline-block;
+  left: 10%;
+  top: 30%;
+  width: 30%;
+  height: 60%;
+}

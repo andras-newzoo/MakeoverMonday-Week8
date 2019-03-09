@@ -1,0 +1,282 @@
+[
+  {
+    "State": "ALASKA",
+    "Region": "West",
+    "Homes Powered": 15200,
+    "Investment Per Home": 8289,
+    "Total Investment": 126
+  },
+  {
+    "State": "ARIZONA",
+    "Region": "West",
+    "Homes Powered": 54600,
+    "Investment Per Home": 10495,
+    "Total Investment": 573
+  },
+  {
+    "State": "CALIFORNIA",
+    "Region": "West",
+    "Homes Powered": 1298000,
+    "Investment Per Home": 9707,
+    "Total Investment": 12600
+  },
+  {
+    "State": "COLORADO",
+    "Region": "West",
+    "Homes Powered": 889100,
+    "Investment Per Home": 6748,
+    "Total Investment": 6000
+  },
+  {
+    "State": "CONNECTICUT",
+    "Region": "Northeast",
+    "Homes Powered": 1300,
+    "Investment Per Home": 6923,
+    "Total Investment": 9
+  },
+  {
+    "State": "HAWAII",
+    "Region": "West",
+    "Homes Powered": 59800,
+    "Investment Per Home": 6890,
+    "Total Investment": 412
+  },
+  {
+    "State": "IDAHO",
+    "Region": "West",
+    "Homes Powered": 228000,
+    "Investment Per Home": 9211,
+    "Total Investment": 2100
+  },
+  {
+    "State": "ILLINOIS",
+    "Region": "Midwest",
+    "Homes Powered": 1050000,
+    "Investment Per Home": 8476,
+    "Total Investment": 8900
+  },
+  {
+    "State": "INDIANA",
+    "Region": "Midwest",
+    "Homes Powered": 440700,
+    "Investment Per Home": 10211,
+    "Total Investment": 4500
+  },
+  {
+    "State": "IOWA",
+    "Region": "Midwest",
+    "Homes Powered": 1935000,
+    "Investment Per Home": 7339,
+    "Total Investment": 14200
+  },
+  {
+    "State": "KANSAS",
+    "Region": "Midwest",
+    "Homes Powered": 1719000,
+    "Investment Per Home": 5468,
+    "Total Investment": 9400
+  },
+  {
+    "State": "MAINE",
+    "Region": "Northeast",
+    "Homes Powered": 206500,
+    "Investment Per Home": 8717,
+    "Total Investment": 1800
+  },
+  {
+    "State": "MARYLAND",
+    "Region": "South",
+    "Homes Powered": 47500,
+    "Investment Per Home": 8358,
+    "Total Investment": 397
+  },
+  {
+    "State": "MASSACHUSETTS",
+    "Region": "Northeast",
+    "Homes Powered": 20500,
+    "Investment Per Home": 11512,
+    "Total Investment": 236
+  },
+  {
+    "State": "MICHIGAN",
+    "Region": "Midwest",
+    "Homes Powered": 471700,
+    "Investment Per Home": 7420,
+    "Total Investment": 3500
+  },
+  {
+    "State": "MINNESOTA",
+    "Region": "Midwest",
+    "Homes Powered": 1012000,
+    "Investment Per Home": 7016,
+    "Total Investment": 7100
+  },
+  {
+    "State": "MISSOURI",
+    "Region": "Midwest",
+    "Homes Powered": 181100,
+    "Investment Per Home": 9939,
+    "Total Investment": 1800
+  },
+  {
+    "State": "MONTANA",
+    "Region": "West",
+    "Homes Powered": 199800,
+    "Investment Per Home": 7007,
+    "Total Investment": 1400
+  },
+  {
+    "State": "NEBRASKA",
+    "Region": "Midwest",
+    "Homes Powered": 486700,
+    "Investment Per Home": 5342,
+    "Total Investment": 2600
+  },
+  {
+    "State": "NEVADA",
+    "Region": "West",
+    "Homes Powered": 33600,
+    "Investment Per Home": 9107,
+    "Total Investment": 306
+  },
+  {
+    "State": "NEW HAMPSHIRE",
+    "Region": "Northeast",
+    "Homes Powered": 38500,
+    "Investment Per Home": 9714,
+    "Total Investment": 374
+  },
+  {
+    "State": "NEW JERSEY",
+    "Region": "Northeast",
+    "Homes Powered": 1900,
+    "Investment Per Home": 7895,
+    "Total Investment": 15
+  },
+  {
+    "State": "NEW MEXICO",
+    "Region": "West",
+    "Homes Powered": 422100,
+    "Investment Per Home": 6870,
+    "Total Investment": 2900
+  },
+  {
+    "State": "NEW YORK",
+    "Region": "Northeast",
+    "Homes Powered": 366500,
+    "Investment Per Home": 10095,
+    "Total Investment": 3700
+  },
+  {
+    "State": "NORTH CAROLINA",
+    "Region": "South",
+    "Homes Powered": 43800,
+    "Investment Per Home": 7534,
+    "Total Investment": 330
+  },
+  {
+    "State": "NORTH DAKOTA",
+    "Region": "Midwest",
+    "Homes Powered": 1021000,
+    "Investment Per Home": 5681,
+    "Total Investment": 5800
+  },
+  {
+    "State": "OHIO",
+    "Region": "Midwest",
+    "Homes Powered": 145300,
+    "Investment Per Home": 8259,
+    "Total Investment": 1200
+  },
+  {
+    "State": "OKLAHOMA",
+    "Region": "South",
+    "Homes Powered": 2268000,
+    "Investment Per Home": 6041,
+    "Total Investment": 13700
+  },
+  {
+    "State": "OREGON",
+    "Region": "West",
+    "Homes Powered": 604600,
+    "Investment Per Home": 10916,
+    "Total Investment": 6600
+  },
+  {
+    "State": "PENNSYLVANIA",
+    "Region": "Northeast",
+    "Homes Powered": 314000,
+    "Investment Per Home": 8917,
+    "Total Investment": 2800
+  },
+  {
+    "State": "RHODE ISLAND",
+    "Region": "Northeast",
+    "Homes Powered": 14200,
+    "Investment Per Home": 24366,
+    "Total Investment": 346
+  },
+  {
+    "State": "SOUTH DAKOTA",
+    "Region": "Midwest",
+    "Homes Powered": 293100,
+    "Investment Per Home": 7165,
+    "Total Investment": 2100
+  },
+  {
+    "State": "TENNESSEE",
+    "Region": "South",
+    "Homes Powered": 2800,
+    "Investment Per Home": 13929,
+    "Total Investment": 39
+  },
+  {
+    "State": "TEXAS",
+    "Region": "South",
+    "Homes Powered": 6235000,
+    "Investment Per Home": 6736,
+    "Total Investment": 42000
+  },
+  {
+    "State": "UTAH",
+    "Region": "West",
+    "Homes Powered": 86900,
+    "Investment Per Home": 9793,
+    "Total Investment": 851
+  },
+  {
+    "State": "VERMONT",
+    "Region": "Northeast",
+    "Homes Powered": 25900,
+    "Investment Per Home": 11583,
+    "Total Investment": 300
+  },
+  {
+    "State": "WASHINGTON",
+    "Region": "West",
+    "Homes Powered": 695300,
+    "Investment Per Home": 8773,
+    "Total Investment": 6100
+  },
+  {
+    "State": "WEST VIRGINIA",
+    "Region": "South",
+    "Homes Powered": 149300,
+    "Investment Per Home": 9377,
+    "Total Investment": 1400
+  },
+  {
+    "State": "WISCONSIN",
+    "Region": "Midwest",
+    "Homes Powered": 142100,
+    "Investment Per Home": 10556,
+    "Total Investment": 1500
+  },
+  {
+    "State": "WYOMING",
+    "Region": "West",
+    "Homes Powered": 408700,
+    "Investment Per Home": 7585,
+    "Total Investment": 3100
+  }
+]
