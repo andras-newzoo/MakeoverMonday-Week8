@@ -2,6 +2,7 @@
   "name": "week-8",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://boringbarchart.com/wind-energy-in-the-united-states",
   "dependencies": {
     "d3-array": "^2.0.3",
     "d3-axis": "^1.0.12",
